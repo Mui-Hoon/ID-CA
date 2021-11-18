@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        form {
+            border: grey 1px solid;
+            width: 50%;
+            margin: auto;
+            padding: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        textarea {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .input-label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <h1>Workshop Registration Form</h1>
+        <label for="name" class="input-label">Name:</label>
+        <input type="text" placeholder="Enter your name" id="name" required>
+        <label for="email" class="input-label">Email Address:</label>
+        <input type="email" placeholder="Enter your email" id="email" required>
+        <label for="dob" class="input-label">Date of Birth:</label>
+        <input type="date" placeholder="Enter your date of birth" id="dob" required>
+        <label for="" class="input-label">Course:</label>
+        <input type="radio" name="course" id="csf">
+        <label for="csf">CSF</label>
+        <input type="radio" name="course" id="ds">
+        <label for="ds">DS</label>
+        <input type="radio" name="course" id="im">
+        <label for="im">IM</label>
+        <input type="radio" name="course" id="it">
+        <label for="it">IT</label>
+        <label for="" class="input-label">Area of Interest:</label>
+        <input type="checkbox" name="interest" id="ai">
+        <label for="ai">AI</label>
+        <input type="checkbox" name="interest" id="analytic">
+        <label for="analytic">Analytic</label>
+        <input type="checkbox" name="interest" id="fintech">
+        <label for="fintech">Fintech</label>
+        <input type="checkbox" name="interest" id="game">
+        <label for="game">Game</label>
+        <label for="remark" class="input-label">Remark:</label>
+        <textarea name="" id="remark" cols="50" rows="5"></textarea>
+        <input type="submit">
+
+    </form>
+</body>
+
+</html>

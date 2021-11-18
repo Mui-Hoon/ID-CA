@@ -1,0 +1,31 @@
+ul{list-style: none;}
+.flex-container {
+    align-content: center;
+    display: flex;
+    background-color: beige;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 576px) {
+    .flex-container {
+      background-color: rgb(171, 249, 255);
+
+      flex-flow: column wrap;
+      flex-direction: row-reverse;
+    }
+  }
+.flex-item {
+   background-color: orangered;
+    color: white;
+    margin:2%;
+    font-size:2em;
+    text-align: center;
+    flex-basis: 30%;
+}
+@media (max-width: 576px) {
+    .flex-item {
+      background-color: rgb(249, 255, 200);
+      color: rgb(224, 211, 28);
+    }
+  }

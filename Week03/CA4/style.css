@@ -1,0 +1,71 @@
+body {
+    font-family: 'Barlow', sans-serif;
+}
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+}
+h2 {
+    font-family: 'Bebas Neue', cursive;
+    margin-bottom: .25em;;
+}
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+.col1{
+    width:50%;
+    background-color: lavender;
+    margin:5px;
+}
+.col2{
+    width:22%;
+    background-color: lavender;
+    margin:5px;
+}
+.col3{
+    width:22%;
+    background-color: lavender;
+    margin:5px;
+}
+@media (max-width: 578px) {
+    .flex-container {
+        display:flex;
+        flex-direction: column;
+    }
+    .col1{
+    width:90%;
+  /*   height: 100px; */
+    background-color: lavender;
+    margin:auto;
+    margin-bottom:10px;
+}
+.col2{
+    width:90%;
+  /*   height: 100px; */
+    background-color: lavender;
+    margin:auto;
+    margin-bottom:10px;
+}
+.col3{
+    width:90%;
+    /* height: 100px; */
+    background-color: lavender;
+    margin:auto;
+    margin-bottom:10px;
+}
+}
+/* label{
+    display: inline-block;
+    width:100px;
+} */
+input[type="text"], input[type="email"] {
+    display:block;
+    width: 90%;
+}
+textarea{
+    display:block;
+    width: 90%;
+}
